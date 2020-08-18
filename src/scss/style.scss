@@ -1,7 +1,46 @@
 @use 'frame' as *;
 
 /* *********************************************************** MY CSS - START */
-
-
+.menu {
+  padding: 1rem 0;
+  &__container {
+    @include func-row(g-xl);
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  &__links {
+    a {
+      padding: 0.5rem 1rem;
+      &:last-child {
+        padding-right: 0;
+      }
+    }  
+  }
+}
+.footer {
+  &__info {
+    @include func-row(g-xl);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    @media (min-width: func-container(md)) {
+      flex-direction: row;
+    }
+  }
+  &__text, &__address {
+    @include func-col(md-6);
+    
+  }
+  &__copy {
+    background-color: #333333;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    p {
+      @include func-row(g-xl);
+      text-align: center;
+      color: #FFF;
+    }
+  }
+}
 
 // *********************************************************** MY CSS - END

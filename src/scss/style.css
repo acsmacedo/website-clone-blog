@@ -46,7 +46,86 @@ img {
 }
 
 /* **************************************************************** CONTAINER */
+.menu__container, .footer__info, .footer__copy p {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .menu__container, .footer__info, .footer__copy p {
+    width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .menu__container, .footer__info, .footer__copy p {
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 960px) {
+  .menu__container, .footer__info, .footer__copy p {
+    width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__container, .footer__info, .footer__copy p {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 /* **************************************************************** GRID */
+@media (min-width: 768px) {
+  .footer__text, .footer__address {
+    width: calc(100% / 12 * 6);
+  }
+}
 /* *********************************************************** MY CSS - START */
+.menu {
+  padding: 1rem 0;
+}
+.menu__container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__links a {
+  padding: 0.5rem 1rem;
+}
+.menu__links a:last-child {
+  padding-right: 0;
+}
+
+.footer__info {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .footer__info {
+    flex-direction: row;
+  }
+}
+.footer__copy {
+  background-color: #333333;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer__copy p {
+  text-align: center;
+  color: #FFF;
+}
 
 /*# sourceMappingURL=style.css.map */

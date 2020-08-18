@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="home">
     <NsaHomeHeader />
-    <NsaAboutText />
+    <NsaAboutHeader />
     <NsaHomePost />
     <NsaProjectHeader />
   </div>
@@ -9,14 +9,14 @@
 
 <script>
 import NsaHomeHeader from '../components/NsaHomeHeader'
-import NsaAboutText from '../components/NsaAboutText'
+import NsaAboutHeader from '../components/about/NsaAboutHeader'
 import NsaHomePost from '../components/NsaHomePost'
 import NsaProjectHeader from '../components/NsaProjectHeader'
 
 export default {
   components: {
     NsaHomeHeader,
-    NsaAboutText,
+    NsaAboutHeader,
     NsaHomePost,
     NsaProjectHeader
   }

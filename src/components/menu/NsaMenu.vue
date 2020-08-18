@@ -1,7 +1,9 @@
 <template>
   <nav class="menu">
     <div class="menu__container">
-      <div class="menu__logo">logo</div>
+      <div class="menu__logo">
+        <a href="#">Anderson Macedo</a>
+      </div>
       <ul class="menu__links">
         <router-link :to="{ name: 'Home' }">home</router-link>
         <router-link :to="{ name: 'About' }">about</router-link>
@@ -16,4 +18,16 @@
 export default {
   
 }
+
+const menu = document.getElementsByClassName('menu');
+document.addEventListener('scroll', function() {
+  menu.forEach(element => {
+    if((window.innerHeight - 50) < window.scrollY) {
+      element.classList.add('menu-fixed');
+    } else {
+      element.classList.remove('menu-fixed');
+    }
+  })
+})
+
 </script>

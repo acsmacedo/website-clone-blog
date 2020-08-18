@@ -1,0 +1,129 @@
+@use '../frame' as *;
+
+.footer__form {
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), 
+    url("../../../jessica-lewis-fJXv46LT7Xk-unsplash.jpg");
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  &__title {
+    color: #F6F6F6;
+    h2::after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    p::before {
+      background-color: transparent;
+    }
+  }
+  &__subscribe {
+    @include func-row(g-md);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: func-container(sm)) {
+      flex-direction: row;
+    }
+    input {
+      background-color: transparent;
+      border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+      padding: 1rem;
+      border-radius: 0.2rem;
+      outline: 0;
+      color: #F6F6F6;
+      &::placeholder{
+        color: rgba(255,255,255, 0.3);
+        letter-spacing: 0.2em;
+      }
+      @media (min-width: func-container(sm)) {
+        width: 70%;
+      }
+    }
+    button {
+      background-color: #0D13C3;
+      color: #F6F6F6;
+      text-transform: uppercase;
+      border: none;
+      padding: 1rem 2rem;
+      margin-top: 0.5rem;
+      border-radius: 0.2rem;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      transition: background-color 0.5s;
+      &:hover {
+        background-color: #0003A3;
+      }
+      @media (min-width: func-container(sm)) {
+        width: 30%;
+        margin-top: 0;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+
+.footer {
+  background-color: #363636;
+  color: #A1A1A1;
+  &__media {
+    background-color: #0D13C3;
+    div {
+      flex-direction: row;
+      justify-content: center;
+    }
+    i {
+      font-size: 2em;
+      padding: 0 0.5rem;
+      color: rgba(255, 255, 255, 0.3);
+      transition: color 0.5s;
+      @media (min-width: func-container(sm)) {
+        font-size: 2.5em;
+        padding: 0 1rem;
+      }
+      &:hover {
+        color: #F6F6F6;
+      }
+    }
+  }
+  &__info {
+    @include func-row(g-xl);
+    flex-direction: row;
+    h4 {
+      color: #F6F6F6;
+      margin-bottom: 1rem;
+      margin-top: 1rem
+    }
+    p {
+      font-size: 0.9em;
+    }
+    &__nas {
+      @include func-col(lg-6);
+      margin-bottom: 3rem;
+      @media (min-width: func-container(lg)) {
+        padding-right: 4rem;
+        margin-bottom: 0;
+      }
+    }
+    &__links {
+      @include func-col(sm-4, lg-2);
+      padding-right: 2rem;
+      @media (min-width: func-container(sm)) {
+        padding-right: 0;
+      }
+    }
+  }
+  &__copy {
+    @include func-row(g-xl);
+    border-top: 0.0625rem solid #464646;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    a {
+      border-bottom: 0.0625rem dotted #A1A1A1;
+      transition: color 0.5s;
+      &:hover {
+        color: #F6F6F6;
+      }
+    }
+  }
+}

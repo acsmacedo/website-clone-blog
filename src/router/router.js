@@ -26,7 +26,7 @@ const routes = [
   component: () => import('../views/NsaBlog.vue')
 },
 {
-  path: '/blog/post',
+  path: '/blog/:post',
   name: 'Post',
   component: () => import('../views/NsaPost.vue')
 }

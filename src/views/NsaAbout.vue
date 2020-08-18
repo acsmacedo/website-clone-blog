@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about">
     <NsaAboutHeader />
     <NsaAboutText />
     <NsaAboutInfo />
@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import NsaAboutHeader from '../components/NsaAboutHeader'
-import NsaAboutText from '../components/NsaAboutText'
-import NsaAboutInfo from '../components/NsaAboutInfo'
+import NsaAboutHeader from '../components/about/NsaAboutHeader'
+import NsaAboutText from '../components/about/NsaAboutText'
+import NsaAboutInfo from '../components/about/NsaAboutInfo'
 
 export default {
   components: {

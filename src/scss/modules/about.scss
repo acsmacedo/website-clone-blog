@@ -1,0 +1,68 @@
+@use '../frame' as *;
+
+.about {
+  &__header {
+    background-color: #E6E6E6;
+    &__text {
+      @include func-row(f-xl);
+      @include func-clear-col((md, 3n));
+      @media (min-width: func-container(md)) {
+        flex-direction: row;
+      }
+      div {
+        @include func-col(md-gutters-4);
+        text-align: center;
+        border: 0.0625rem solid #0D13C3;
+        padding: 2rem;
+        border-radius: 0.2rem;
+        margin-bottom: 1rem;
+        @media (min-width: func-container(md)) {
+          margin-bottom: 0;
+        }
+        i {
+          color: #0D13C3;
+          font-size: 3em;
+        }
+        h3 {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  &__text {
+    padding-bottom: 0;
+    &__content {
+      flex-direction: row;
+    }
+    &__item {
+      @include func-col(md-6);
+      
+      div {
+        padding: 2rem;
+        background-color: #0D13C3;
+        justify-content: center;
+        color: #F1F1F1;
+      }
+      @media (min-width: func-container(sm)) {
+        flex-direction: row;
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+        img, div {
+          width: 50%;
+        }
+      }
+      @media (min-width: func-container(md)) {
+        &:nth-child(even) {
+          flex-direction: row;
+        }
+        &:nth-child(3) {
+          flex-direction: row-reverse;
+        }
+        &:nth-child(4) {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+}

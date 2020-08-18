@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
 /* ********************************************* RESET */
 * {
   box-sizing: border-box;
@@ -46,41 +47,56 @@ img {
 }
 
 /* **************************************************************** CONTAINER */
-.menu__container, .footer__info, .footer__copy p {
+.home__header__container, .footer__form__subscribe, .title, .home__post__title, .footer__info, .footer__copy, .menu__container, .home__post__items, .blog__items, .project__header__text, .about__header__text {
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 @media (min-width: 576px) {
-  .menu__container, .footer__info, .footer__copy p {
+  .home__header__container, .footer__form__subscribe, .title, .home__post__title, .footer__info, .footer__copy, .menu__container, .home__post__items, .blog__items, .project__header__text {
     width: 540px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0;
     padding-left: 0;
   }
+
+  .about__header__text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 @media (min-width: 768px) {
-  .menu__container, .footer__info, .footer__copy p {
+  .footer__form__subscribe, .title, .home__post__title, .footer__info, .footer__copy, .menu__container, .home__post__items, .blog__items, .project__header__text {
     width: 720px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0;
     padding-left: 0;
   }
+
+  .about__header__text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 @media (min-width: 960px) {
-  .menu__container, .footer__info, .footer__copy p {
+  .footer__info, .footer__copy, .menu__container, .home__post__items, .blog__items, .project__header__text {
     width: 920px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 0;
     padding-left: 0;
   }
+
+  .about__header__text {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 @media (min-width: 1200px) {
-  .menu__container, .footer__info, .footer__copy p {
+  .footer__info, .footer__copy, .menu__container, .home__post__items, .blog__items, .project__header__text, .about__header__text {
     width: 1140px;
     margin-right: auto;
     margin-left: auto;
@@ -89,43 +105,404 @@ img {
   }
 }
 /* **************************************************************** GRID */
+@media (min-width: 576px) {
+  .footer__info__links, .blog__items div img {
+    width: calc(100% / 12 * 4);
+  }
+
+  .blog__items div span {
+    width: calc(100% / 12 * 8);
+  }
+}
 @media (min-width: 768px) {
-  .footer__text, .footer__address {
+  .about__header__text div, .home__post__items div {
+    width: calc(100% / 12 * 4 - 2rem * 8 / 12);
+    margin-right: calc(2rem);
+  }
+
+  .about__text__item {
     width: calc(100% / 12 * 6);
   }
 }
-/* *********************************************************** MY CSS - START */
+@media (min-width: 960px) {
+  .footer__info__links {
+    width: calc(100% / 12 * 2);
+  }
+
+  .footer__info__nas {
+    width: calc(100% / 12 * 6);
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title h2 {
+  align-self: center;
+}
+.title h2::after {
+  content: "";
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #333333;
+  display: block;
+  margin-top: 0.5rem;
+}
+.title p::before {
+  content: "";
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #0D13C3;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -1.15rem;
+  margin-top: 1rem;
+}
+
+.home__header {
+  background-color: #0D13C3;
+  color: #FFFFFF;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+}
+.home__header__container {
+  align-items: center;
+}
+.home__header__container p {
+  margin: 1rem 0 2rem 0;
+}
+.home__header__container a {
+  border: 0.0625rem solid #FFFFFF;
+  padding: 0.5rem 2rem;
+}
+.home__post {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.home__post__title {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .home__post__items > :nth-child(3n) {
+    margin-right: 0;
+  }
+  .home__post__items > :not(:nth-child(3n)) {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .home__post__items {
+    flex-direction: row;
+  }
+}
+.home__post__items div span {
+  margin-bottom: 1rem;
+}
+.home__post__items div h3 {
+  margin-top: 1rem;
+}
+.home__post__items div p {
+  margin-bottom: 1rem;
+}
+.home__post__items div a {
+  border: 0.0625rem solid #0D13C3;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  color: #0D13C3;
+}
+
+.blog__items div {
+  margin: 1rem 0;
+}
+.blog__items div img {
+  max-height: 200px;
+}
+@media (min-width: 576px) {
+  .blog__items div {
+    flex-direction: row;
+  }
+}
+
+.project__header {
+  background-color: #EEEEEE;
+}
+.router-link-exact-active {
+  border-bottom: 0.0625rem solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.menu-fixed {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 .menu {
   padding: 1rem 0;
+  background-color: #0D13C3;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .menu__container {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu__links a {
+.menu__logo {
   padding: 0.5rem 1rem;
 }
-.menu__links a:last-child {
-  padding-right: 0;
+.menu__links a {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  transition: color 0.5s;
+}
+.menu__links a:hover {
+  color: #FFFFFF;
 }
 
-.footer__info {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.about__header {
+  background-color: #E6E6E6;
 }
 @media (min-width: 768px) {
-  .footer__info {
+  .about__header__text > :nth-child(3n) {
+    margin-right: 0;
+  }
+  .about__header__text > :not(:nth-child(3n)) {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .about__header__text {
     flex-direction: row;
   }
 }
-.footer__copy {
-  background-color: #333333;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.footer__copy p {
+.about__header__text div {
   text-align: center;
-  color: #FFF;
+  border: 0.0625rem solid #0D13C3;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .about__header__text div {
+    margin-bottom: 0;
+  }
+}
+.about__header__text div i {
+  color: #0D13C3;
+  font-size: 3em;
+}
+.about__header__text div h3 {
+  margin: 1rem 0;
+}
+.about__text {
+  padding-bottom: 0;
+}
+.about__text__content {
+  flex-direction: row;
+}
+.about__text__item div {
+  padding: 2rem;
+  background-color: #0D13C3;
+  justify-content: center;
+  color: #F1F1F1;
+}
+@media (min-width: 576px) {
+  .about__text__item {
+    flex-direction: row;
+  }
+  .about__text__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .about__text__item img, .about__text__item div {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .about__text__item:nth-child(even) {
+    flex-direction: row;
+  }
+  .about__text__item:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .about__text__item:nth-child(4) {
+    flex-direction: row-reverse;
+  }
+}
+
+.footer__form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../jessica-lewis-fJXv46LT7Xk-unsplash.jpg");
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.footer__form__title {
+  color: #F6F6F6;
+}
+.footer__form__title h2::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.footer__form__title p::before {
+  background-color: transparent;
+}
+.footer__form__subscribe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .footer__form__subscribe {
+    flex-direction: row;
+  }
+}
+.footer__form__subscribe input {
+  background-color: transparent;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  outline: 0;
+  color: #F6F6F6;
+}
+.footer__form__subscribe input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.2em;
+}
+@media (min-width: 576px) {
+  .footer__form__subscribe input {
+    width: 70%;
+  }
+}
+.footer__form__subscribe button {
+  background-color: #0D13C3;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  transition: background-color 0.5s;
+}
+.footer__form__subscribe button:hover {
+  background-color: #0003A3;
+}
+@media (min-width: 576px) {
+  .footer__form__subscribe button {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+.footer {
+  background-color: #363636;
+  color: #A1A1A1;
+}
+.footer__media {
+  background-color: #0D13C3;
+}
+.footer__media div {
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__media i {
+  font-size: 2em;
+  padding: 0 0.5rem;
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.5s;
+}
+@media (min-width: 576px) {
+  .footer__media i {
+    font-size: 2.5em;
+    padding: 0 1rem;
+  }
+}
+.footer__media i:hover {
+  color: #F6F6F6;
+}
+.footer__info {
+  flex-direction: row;
+}
+.footer__info h4 {
+  color: #F6F6F6;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.footer__info p {
+  font-size: 0.9em;
+}
+.footer__info__nas {
+  margin-bottom: 3rem;
+}
+@media (min-width: 960px) {
+  .footer__info__nas {
+    padding-right: 4rem;
+    margin-bottom: 0;
+  }
+}
+.footer__info__links {
+  padding-right: 2rem;
+}
+@media (min-width: 576px) {
+  .footer__info__links {
+    padding-right: 0;
+  }
+}
+.footer__copy {
+  border-top: 0.0625rem solid #464646;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.footer__copy a {
+  border-bottom: 0.0625rem dotted #A1A1A1;
+  transition: color 0.5s;
+}
+.footer__copy a:hover {
+  color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */

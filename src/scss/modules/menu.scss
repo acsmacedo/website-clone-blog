@@ -1,0 +1,41 @@
+@use '../frame' as *;
+.router-link-exact-active {
+  border-bottom: 0.0625rem solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.menu-fixed {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.menu {
+  padding: 1rem 0;
+  background-color: #0D13C3;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  &__container {
+    @include func-row(g-xl);
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  &__logo {
+    padding: 0.5rem 1rem;
+  }
+  &__links {
+    a {
+      padding: 0.5rem 1rem;
+      display: inline-flex;
+      transition: color 0.5s;
+      &:hover {
+        color: #FFFFFF;
+      }
+    }  
+  }
+}

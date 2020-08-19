@@ -1,7 +1,7 @@
 <template>
   <section class="about__header">
     <NsaTitle 
-      title="Key Features"
+      title="About us"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices elit nullam nunc justo sagittis suscipit ultrices."
     />
     <div class="about__header__text">

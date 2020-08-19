@@ -25,29 +25,143 @@ export default new Vuex.Store({
     ],
     blogPost: [
       {
-        id: 0,
-        img: '7e4509294d9c93994b4554a2eb024256.jpeg',
+        id: 1,
+        img: '/post-1.jpg',
         imgInfo: 'qualquer',
         title: 'Post 1',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.'
-      }, {
-        id: 1,
-        img: '7e4509294d9c93994b4554a2eb024256.jpeg',
-        imgInfo: 'qualquer',
-        title: 'Post 2',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.'
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
       }, {
         id: 2,
-        img: '7e4509294d9c93994b4554a2eb024256.jpeg',
+        img: '/post-2.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 2',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 3,
+        img: '/post-3.jpg',
         imgInfo: 'qualquer',
         title: 'Post 3',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.'
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 4,
+        img: '/post-4.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 4',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 5,
+        img: '/post-5.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 5',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 6,
+        img: '/post-6.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 6',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 7,
+        img: '/post-7.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 7',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 8,
+        img: '/post-8.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 8',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
+      }, {
+        id: 9,
+        img: '/post-9.jpg',
+        imgInfo: 'qualquer',
+        title: 'Post 9',
+        text: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat non recusandae natus odit inventore quia quos corrupti tempore amet pariatur fugiat distinctio veritatis, necessitatibus nam ullam esse id dignissimos?
+        `
       }
-    ]
+    ],
+    showPost: 3
+  },
+  getters: {
+    blogPost(state) {
+      return state.blogPost.reverse();
+    },
+    blogPostItem: state => id => {
+      let post = state.blogPost.find(item => {
+        return (item.id == id);
+      })
+      return post;
+    }
   },
   mutations: {
-  },
-  actions: {
+    plusShowPost(state) {
+      if(state.showPost < state.blogPost.length) {
+        state.showPost += 3;
+      }
+    }
   },
   modules: {
   }

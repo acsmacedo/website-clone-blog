@@ -1,11 +1,11 @@
 <template>
   <section class="footer__info">
     <div class="footer__info__nas">
-      <h4>National Art School</h4>
+      <h4>Anderson Macedo</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus ratione ea et dignissimos nostrum magnam explicabo natus, fugit nam vero doloribus iste incidunt consequuntur illo vitae quas asperiores voluptas eveniet.</p>
     </div>
     <div class="footer__info__links">
-      <h4>Features</h4>
+      <h4>Front-end</h4>
       <p>HTML</p>
       <p>CSS</p>
       <p>Javascript</p>

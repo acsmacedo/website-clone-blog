@@ -1,8 +1,7 @@
 @use '../frame' as *;
 
 .footer__form {
-  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), 
-    url("../../../jessica-lewis-fJXv46LT7Xk-unsplash.jpg");
+  background-image: url("../assets/img/footer-form.jpg");
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -30,6 +29,10 @@
       border-radius: 0.2rem;
       outline: 0;
       color: #F6F6F6;
+      transition: all 0.5s;
+      &:focus, &:hover {
+        border-color: #F6F6F6;
+      }
       &::placeholder{
         color: rgba(255,255,255, 0.3);
         letter-spacing: 0.2em;
@@ -49,6 +52,7 @@
       font-size: 0.8em;
       letter-spacing: 0.2em;
       transition: background-color 0.5s;
+      outline: 0;
       &:hover {
         background-color: #0003A3;
       }
@@ -90,8 +94,7 @@
     flex-direction: row;
     h4 {
       color: #F6F6F6;
-      margin-bottom: 1rem;
-      margin-top: 1rem
+      margin-top: 1rem;
     }
     p {
       font-size: 0.9em;

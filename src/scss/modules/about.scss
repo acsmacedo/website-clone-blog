@@ -16,6 +16,11 @@
         padding: 2rem;
         border-radius: 0.2rem;
         margin-bottom: 1rem;
+        background-color: #F1F1F1;
+        transition: all 0.5s;
+        &:hover {
+          background-color: #FFFFFF;
+        }
         @media (min-width: func-container(md)) {
           margin-bottom: 0;
         }
@@ -35,13 +40,22 @@
       flex-direction: row;
     }
     &__item {
-      @include func-col(md-6);
-      
+      @include func-col(lg-6);
       div {
         padding: 2rem;
         background-color: #0D13C3;
         justify-content: center;
         color: #F1F1F1;
+        transition: all 0.5s;
+        &:hover {
+          background-color: #0003A3;
+        }
+      }
+      img {
+        transition: all 0.5s;
+      }
+      img:hover {
+        opacity: 0.8;
       }
       @media (min-width: func-container(sm)) {
         flex-direction: row;
@@ -52,7 +66,7 @@
           width: 50%;
         }
       }
-      @media (min-width: func-container(md)) {
+      @media (min-width: func-container(lg)) {
         &:nth-child(even) {
           flex-direction: row;
         }

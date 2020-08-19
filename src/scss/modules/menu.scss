@@ -4,26 +4,19 @@
   color: #FFFFFF;
 }
 
-.menu-fixed {
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
 .menu {
   padding: 1rem 0;
   background-color: #0D13C3;
   color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  left: 0;
+  position: fixed !important;
+  top: 0;
   right: 0;
-  
+  left: 0;
+  z-index: 1;
   &__container {
     @include func-row(g-xl);
     flex-direction: row;
     justify-content: space-between;
-
   }
   &__logo {
     padding: 0.5rem 1rem;

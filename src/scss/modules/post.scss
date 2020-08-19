@@ -1,0 +1,31 @@
+@use '../frame' as *;
+
+.post {
+  @include func-row(g-md);
+  img {
+    max-height: 300px;
+  }
+  h2 {
+    margin: 1rem 0;
+  }
+  p {
+    white-space: pre-line;
+  }
+  button {
+    border: 0.0625rem solid #F1F1F1;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    transition: all 0.5s;
+    border-radius: 0.2rem;
+    background-color: #0D13C3;
+    letter-spacing: 0.3em;
+    color: #F1F1F1;
+    margin-top: 1rem;
+    outline: 0;
+    &:hover {
+      background-color: #0003A3;
+    }
+  }
+}

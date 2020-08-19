@@ -18,16 +18,4 @@
 export default {
   
 }
-
-const menu = document.getElementsByClassName('menu');
-document.addEventListener('scroll', function() {
-  menu.forEach(element => {
-    if((window.innerHeight - 50) < window.scrollY) {
-      element.classList.add('menu-fixed');
-    } else {
-      element.classList.remove('menu-fixed');
-    }
-  })
-})
-
 </script>

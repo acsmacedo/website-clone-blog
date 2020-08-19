@@ -1,0 +1,57 @@
+@use '../frame' as *;
+
+.blog {
+  &__items {
+    @include func-row(g-xl);
+    border-radius: 0.2rem;
+    div {
+      &:nth-child(odd) {
+        background-color: #E6E6E6;
+      }
+      &:nth-child(even) {
+        background-color: #F1F1F1;
+      }
+      img {
+        @include func-col(sm-6, md-5, lg-4);
+        max-height: 200px;
+        @media (min-width: func-container(sm)) {
+          max-height: 270px;
+        }
+        @media (min-width: func-container(lg)) {
+          max-height: 200px;
+        }
+      }
+      span {
+        @include func-col(sm-6, md-7, lg-8);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      @media (min-width: func-container(sm)) {
+        flex-direction: row;
+      }
+    }
+  }
+  button {
+    @include func-row(f-xl);
+    border: 0.0625rem solid #F1F1F1;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    transition: all 0.5s;
+    border-radius: 0.2rem;
+    background-color: #0D13C3;
+    letter-spacing: 0.3em;
+    color: #F1F1F1;
+    margin-top: 1rem;
+    outline: 0;
+    &:hover {
+      background-color: #0003A3;
+    }
+  }
+}

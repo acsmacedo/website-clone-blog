@@ -47,14 +47,14 @@ img {
 }
 
 /* **************************************************************** CONTAINER */
-.footer__form__subscribe, .post, .home__header__container, .title, .footer__info, .footer__copy, .project__header__text, .blog__items, .home__post__items, .menu__container, .blog button, .about__header__text {
+.footer__form__subscribe, .post__container, .home__header__container, .title, .footer__info, .footer__copy, .blog__items, .home__post__items, .menu__container, .blog button, .about__header__text {
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 @media (min-width: 576px) {
-  .footer__form__subscribe, .post, .home__header__container, .title, .footer__info, .footer__copy, .project__header__text, .blog__items, .home__post__items, .menu__container {
+  .footer__form__subscribe, .post__container, .home__header__container, .title, .footer__info, .footer__copy, .blog__items, .home__post__items, .menu__container {
     width: 540px;
     margin-right: auto;
     margin-left: auto;
@@ -68,7 +68,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .footer__form__subscribe, .post, .home__header__container, .title, .footer__info, .footer__copy, .project__header__text, .blog__items, .home__post__items, .menu__container {
+  .footer__form__subscribe, .post__container, .home__header__container, .title, .footer__info, .footer__copy, .blog__items, .home__post__items, .menu__container {
     width: 720px;
     margin-right: auto;
     margin-left: auto;
@@ -82,7 +82,7 @@ img {
   }
 }
 @media (min-width: 960px) {
-  .footer__info, .footer__copy, .project__header__text, .blog__items, .home__post__items, .menu__container {
+  .footer__info, .footer__copy, .blog__items, .home__post__items, .menu__container {
     width: 920px;
     margin-right: auto;
     margin-left: auto;
@@ -96,7 +96,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .footer__info, .footer__copy, .project__header__text, .blog__items, .home__post__items, .menu__container, .blog button, .about__header__text {
+  .footer__info, .footer__copy, .blog__items, .home__post__items, .menu__container, .blog button, .about__header__text {
     width: 1140px;
     margin-right: auto;
     margin-left: auto;
@@ -199,7 +199,7 @@ p {
   content: "";
   width: 100%;
   height: 0.0625rem;
-  background-color: #363636;
+  background-color: #B6B6B6;
   display: block;
   margin-top: 0.5rem;
 }
@@ -232,9 +232,10 @@ p {
   color: #F1F1F1;
 }
 
-.router-link-exact-active {
-  border-bottom: 0.0625rem solid #FFFFFF;
-  color: #FFFFFF;
+@media (min-width: 768px) {
+  .router-link-exact-active {
+    color: #FFFFFF !important;
+  }
 }
 
 .menu {
@@ -252,15 +253,71 @@ p {
   justify-content: space-between;
 }
 .menu__logo {
-  padding: 0.5rem 1rem;
-}
-.menu__links a {
-  padding: 0.5rem 1rem;
-  display: inline-flex;
+  padding: 0.5rem 0;
   transition: color 0.5s;
 }
-.menu__links a:hover {
+.menu__logo:hover {
   color: #FFFFFF;
+}
+.menu__colapse {
+  font-size: 1.5em;
+  padding: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .menu__colapse {
+    display: none;
+  }
+}
+.menu__links {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  min-width: 70vw;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+  z-index: 20;
+}
+.menu__links a {
+  color: #0D13C3;
+  padding: 1rem;
+  border-bottom: 0.0625rem solid #0D13C3;
+}
+.menu__links a:last-child {
+  padding-right: 0;
+}
+@media (min-width: 768px) {
+  .menu__links {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    min-width: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+  .menu__links a {
+    color: inherit;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    transition: color 0.5s;
+    border-bottom: none;
+  }
+  .menu__links a:hover {
+    color: #FFFFFF;
+  }
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 .home__header {
@@ -317,9 +374,6 @@ p {
 .home__about a, .home__project a {
   background-color: #F1F1F1;
 }
-.home__project {
-  margin-top: -3rem;
-}
 @media (min-width: 768px) {
   .home__post__items > :nth-child(3n) {
     margin-right: 0;
@@ -345,6 +399,8 @@ p {
 }
 .home__post__items div span {
   margin-bottom: 1rem;
+  border: 0.0625rem solid #B6B6B6;
+  border-top: none;
   background-color: #E6E6E6;
   padding: 0 1rem 2rem 1rem;
 }
@@ -406,7 +462,7 @@ p {
 }
 .about__header__text div {
   text-align: center;
-  border: 0.0625rem solid #0D13C3;
+  border: 0.0625rem solid #B6B6B6;
   padding: 2rem;
   border-radius: 0.2rem;
   margin-bottom: 1rem;
@@ -527,16 +583,24 @@ p {
   background-color: #0003A3;
 }
 
-.post img {
+.post {
+  background-color: #E6E6E6;
+}
+.post__container {
+  background-color: #FFFFFF;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.post__container img {
   max-height: 300px;
 }
-.post h2 {
+.post__container h2 {
   margin: 1rem 0;
 }
-.post p {
+.post__container p {
   white-space: pre-line;
 }
-.post button {
+.post__container button {
   border: 0.0625rem solid #F1F1F1;
   padding: 0.5rem 2rem;
   text-transform: uppercase;
@@ -550,13 +614,17 @@ p {
   margin-top: 1rem;
   outline: 0;
 }
-.post button:hover {
+.post__container button:hover {
   background-color: #0003A3;
 }
 
 .project__header {
   background-color: #E6E6E6;
 }
+.project__header div {
+  margin-bottom: 0;
+}
+
 .footer__form {
   background-image: url("../assets/img/footer-form.jpg");
   background-size: cover;

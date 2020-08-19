@@ -3,8 +3,8 @@
 .project {
   &__header {
     background-color: #E6E6E6;
-    &__text {
-      @include func-row(g-xl);
+    div {
+      margin-bottom: 0;
     }
   }
 }

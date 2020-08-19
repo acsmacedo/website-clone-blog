@@ -2,18 +2,19 @@
   <div>
     <div style="margin-top: 62px;"></div>
     <NsaProjectHeader />
+    <NsaAboutText />
 
   </div>
 </template>
 
 <script>
 import NsaProjectHeader from './NsaProjectHeader'
-//import NsaProjectText from './NsaProjectText'
+import NsaAboutText from '../about/NsaAboutText'
 
 export default {
   components: {
     NsaProjectHeader,
-    //NsaProjectText
+    NsaAboutText
   }
 }
 </script>

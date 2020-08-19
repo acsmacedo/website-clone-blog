@@ -54,9 +54,6 @@
       background-color: #F1F1F1;
     }
   }
-  &__project {
-    margin-top: -3rem;
-  }
   &__post {
     &__items {
       @include func-row(g-xl);
@@ -67,6 +64,7 @@
       div {
         @include func-col(md-gutters-4);
         border-radius: 0.2em;
+        
         img {
           height: 200px;
           transition: all 0.5s;
@@ -76,6 +74,8 @@
         }
         span {
           margin-bottom: 1rem;
+          border: 0.0625rem solid #B6B6B6;
+          border-top: none;
           background-color: #E6E6E6;
           padding: 0 1rem 2rem 1rem;
         }

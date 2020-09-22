@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    
     <div class="btn-up" v-on:click="up">
       <i class='bx bx-up-arrow-alt'></i>
     </div>
+    <NsaMenuColapse />
     <NsaMenu />
     <transition name="tra">
       <router-view></router-view>
@@ -14,11 +14,13 @@
 
 <script>
 import NsaMenu from './components/menu/NsaMenu'
+import NsaMenuColapse from './components/menu/NsaMenuColapse'
 import NsaFooter from './components/footer/NsaFooter'
 
 export default {
   components: {
     NsaMenu,
+    NsaMenuColapse,
     NsaFooter
   },
   methods: {

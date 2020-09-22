@@ -1,24 +1,12 @@
-# website-clone-nas
+# CLONE BLOG
+Clone Blog é um projeto pessoal criado com o intuito de praticar o framework "Vue". Foram utilizadas as ferramentas "Vue/cli", "Vue Router" e "Vuex".
 
-## Project setup
-```
-npm install
-```
+### Codificação
+- Simulei a criação de páginas de um blog, utilizando rotas dinâmicas.
+- Utilizei sass no desenvolvimento do CSS.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Outros recursos
+- Foi utilizado a biblioteca de ícones: [BoxIcons](https://boxicons.com/).
+- Foi utilizado imagens do banco de imagens: [Unsplash](https://unsplash.com/).
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Desenvolvido por [Anderson Macedo](https://github.com/acsmacedo).

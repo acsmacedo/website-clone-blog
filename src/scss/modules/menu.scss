@@ -12,8 +12,8 @@
   color: rgba(255, 255, 255, 0.3);
   position: fixed !important;
   top: 0;
-  right: 0;
   left: 0;
+  width: 100%;
   z-index: 1;
   &__container {
     @include func-row(g-xl);
@@ -27,7 +27,7 @@
       color: #FFFFFF;
     }
   }
-  &__colapse {
+  &__icon {
     font-size: 1.5em;
     padding: 0.5rem 0;
     @media (min-width: func-container(md)) {
@@ -35,29 +35,10 @@
     }
   }
   &__links {
-    position: fixed;
-    top: 0;
-    right: -500px;
-    min-width: 70vw;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 2rem;
-    z-index: 20;
-    a {
-      color: #0D13C3;
-      padding: 1rem;
-      border-bottom: 0.0625rem solid #0D13C3;
-      &:last-child {
-        padding-right: 0;
-      }
-    }
+    display: none;
     @media (min-width: func-container(md)) {
-      position: static;
-      height: auto;
+      display: flex;
       flex-direction: row;
-      min-width: auto;
       background-color: transparent;
       padding: 0;
       a {
@@ -70,9 +51,31 @@
           color: #FFFFFF;
         }
       }
+    } 
+  }
+  &__colapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 70%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    z-index: 200;
+    display: none;
+    @media (min-width: func-container(md)) {
+      display: none;
     }
-      
-    
+    a {
+      color: #0D13C3;
+      padding: 1rem;
+      border-bottom: 0.0625rem solid #0D13C3;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 }
 
@@ -85,4 +88,7 @@
   top: 0;
   left: 0;
   display: none;
+  @media (min-width: func-container(md)) {
+    display: none;
+  }
 }

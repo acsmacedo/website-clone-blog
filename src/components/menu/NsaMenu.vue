@@ -4,8 +4,7 @@
       <div class="menu__logo">
         <a href="https://github.com/acsmacedo" target="_blank">Anderson Macedo</a>
       </div>
-      <div class="menu__colapse" v-on:click="open"><i class='bx bx-menu'></i></div>
-      <div class="overlay" v-on:click="close"></div>
+      <div class="menu__icon" v-on:click="open"><i class='bx bx-menu'></i></div>
       <ul class="menu__links" v-on:click="close">
         <router-link :to="{ name: 'Home' }">home</router-link>
         <router-link :to="{ name: 'About' }">about</router-link>
@@ -20,15 +19,15 @@
 export default {
   methods: {
     open() {
-      let menu = document.querySelector('.menu__links');
+      let menu = document.querySelector('.menu__colapse');
       let overlay = document.querySelector('.overlay');
-      menu.style.right = 0;
+      menu.style.display = 'flex';
       overlay.style.display = 'block';
     },
     close() {
-      let menu = document.querySelector('.menu__links');
+      let menu = document.querySelector('.menu__colapse');
       let overlay = document.querySelector('.overlay');
-      menu.style.right = '-500px';
+      menu.style.display = 'none';
       overlay.style.display = 'none';
     }
   }
